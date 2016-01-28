@@ -66,25 +66,29 @@
         myImage.setAttribute('src', 'static/coffee_mug.jpg');
     }
 
-    myImage.addEventListener('click', makeCoffee);
+    // myImage.addEventListener('click', makeCoffee);
 
     function coffeeMachine() {
         myImage.setAttribute('src', 'static/coffee_machine.jpg');
     }
 
-    setTimeout(coffeeMachine, 500);
+    // setTimeout(coffeeMachine, 500);
 
     function showBeans () {
         myImage.setAttribute('src', 'static/coffee_beans.jpg');
     }
     
-    setTimeout(showBeans, 1000)
+    // setTimeout(showBeans, 1000);
 
-    // myImage.addEventListener('click', coffeeMachine);
-    // setTimeout(coffeeMachine, 1000);
-    // setTimeout(makeCoffee, 1500);
-    // setTimeout(showBeans, )
 
+    function clickOnMachine() {
+        setTimeout(coffeeMachine, 1000);
+        setTimeout(makeCoffee, 1500);
+        setTimeout(showBeans, 3000);
+    }
+
+    myImage.addEventListener('click', clickOnMachine);
+    
 
 
 </script>
